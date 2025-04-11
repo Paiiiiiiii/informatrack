@@ -16,6 +16,15 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".view.DashboardDosen"
+            android:exported="false" />
+        <activity
+            android:name=".view.DashboardAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".view.Register"
+            android:exported="false" />
+        <activity
             android:name=".view.Dashboard"
             android:exported="false" />
         <activity

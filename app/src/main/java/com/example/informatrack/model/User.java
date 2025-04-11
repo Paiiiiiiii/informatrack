@@ -6,17 +6,19 @@ public class User {
     private String nim;
     private String email;
     private String password;
+    private String role;
 
     // Constructor tanpa parameter
     public User() {}
 
     // Constructor dengan parameter
-    public User(String id_user, String username, String nim, String email, String password) {
+    public User(String id_user, String username, String nim, String email, String password, String role) {
         this.id_user = id_user;
         this.username = username;
         this.nim = nim;
         this.email = email;
         this.password = password;
+        this.role = role;
     }
 
     // Getter dan Setter
@@ -57,6 +59,9 @@ public class User {
     public void setPassword(String password) {
         this.password = password;
     }
+    public String getRole() { return role; }
+
+    public void setRole(String role) { this.role = role; }
 
     // toString untuk debugging
     @Override
@@ -67,6 +72,7 @@ public class User {
                 ", nim='" + nim + '\'' +
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
+                ", role= '" + role + '\'' +
                 '}';
     }
 }

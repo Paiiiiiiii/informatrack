@@ -5,14 +5,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/white"
-    tools:context=".view.MainActivity">
+    tools:context=".view.Register">
 
     <EditText
         android:id="@+id/etUsername"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        >
+        android:layout_height="wrap_content">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/etNim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
     </EditText>
 
     <EditText
@@ -23,20 +36,11 @@
     </EditText>
 
     <Button
-        android:id="@+id/btnLogin"
+        android:id="@+id/btnRegister"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Login">
+        android:text="Register">
 
     </Button>
-
-    <TextView
-        android:id="@+id/tvRegister"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Sig In">
-
-
-    </TextView>
 
 </LinearLayout>
